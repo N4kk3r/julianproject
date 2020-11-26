@@ -14,11 +14,13 @@
             <img src="img/logo.png" alt="smart seo" />
         </figure>
         <nav id="action"></nav>
-        <script type:"text/x-handlebars-template" id="index">
+
+
+        <script type="text/x-handlebars-template" id="index">
         <ul class = "lista">
           {{#each lista}}
-            <li>{{this}}</li>
-          {{/each}}
+            <li>{{boton}}</li>
+          {{/each}} 
         </ul>
         </script>
         <script type="text/javascript" src="./js/handlebars-v4.7.6.js"></script>
@@ -28,22 +30,31 @@
         var template = document.getElementById('index').innerHTML;
         console.log(template);
         var compile= Handlebars.compile(template);
-        var data = {lista: ["SEO",  "UX",  "WORK",  "ABOUT",  "LETS WORK TOGETHER",], };
+        var data = { 
+          lista: [ 
+            {
+              boton: 'SEO'
+            },
+            {
+              boton: 'UX'
+            },
+            {
+              boton: "WORK"
+            },
+            {
+              boton: "ABOUT"
+            },
+            {
+              boton:"LETS WORK TOGETHER"
+            }
+          ]
+         }
         var compiledHTML = compile(data);
         document.getElementById('action').innerHTML += compiledHTML;
         </script>
 
 
 
-
-
-
-
-
-      
-
-
-       
 
 
 
