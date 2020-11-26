@@ -19,7 +19,7 @@
         <script type="text/x-handlebars-template" id="index">
         <ul class = "lista">
           {{#each lista}}
-            <li>{{boton}}</li>
+            <li><a href="{{url}}">{{caption}}</a></li>
           {{/each}} 
         </ul>
         </script>
@@ -33,19 +33,24 @@
         var data = { 
           lista: [ 
             {
-              boton: 'SEO'
+              caption: "SEO",
+              url: "#"
             },
             {
-              boton: 'UX'
+              caption: "UX",
+              url: "#"
             },
             {
-              boton: "WORK"
+              caption: "WORK",
+              url:"#"
             },
             {
-              boton: "ABOUT"
+              caption: "ABOUT",
+              url:"#"
             },
             {
-              boton:"LETS WORK TOGETHER"
+              caption:"LETS WORK TOGETHER",
+              url: "#"
             }
           ]
          }

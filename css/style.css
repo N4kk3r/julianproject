@@ -72,6 +72,11 @@ header nav ul li {
   padding: 0 20px;
 }
 
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 header section {
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
